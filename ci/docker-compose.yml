@@ -25,7 +25,7 @@ services:
       - '443:443'
 
   site:
-    image: objdefault/eternalyoga:v1.02.4
+    image: objdefault/eternalyoga:v1.02.5
     container_name: site
     restart: unless-stopped
     expose:
