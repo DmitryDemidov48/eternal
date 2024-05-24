@@ -1,0 +1,45 @@
+version: "3.3"
+
+networks:
+  site-net:
+    driver: bridge
+
+volumes:
+  certbot-conf:
+  certbot-www:
+
+services:
+  nginx:
+    image: nginx:1.15-alpine
+    container_name: nginx
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    restart: unless-stopped
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - certbot-conf:/etc/letsencrypt
+      - certbot-www:/var/www/certbot
+    networks:
+      - site-net
+    ports:
+      - '80:80'
+      - '443:443'
+
+  site:
+    image: objdefault/eternalyoga:v1.02.4
+    container_name: site
+    restart: unless-stopped
+    expose:
+      - '3000'
+    networks:
+      - site-net
+
+  certbot:
+    image: certbot/certbot
+    restart: unless-stopped
+    container_name: certbot
+    volumes:
+      - certbot-conf:/etc/letsencrypt
+      - certbot-www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    networks:
+      - site-net
