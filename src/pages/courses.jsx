@@ -43,7 +43,7 @@ export default function EventsPage() {
             </Head>
 
             <main className="px-4 sm:px-6 lg:px-8 mx-auto max-w-4xl">
-                <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mt-8 mb-4">Куры по Йоге</h1>
+                <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mt-8 mb-4">Курсы по Йоге</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {events.map(event => (
                         <div key={event.id} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl flex flex-col justify-between h-80">

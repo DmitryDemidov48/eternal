@@ -95,7 +95,7 @@ function Photos() {
                             key={image.src}
                             ref={(el) => containerRef.current[imageIndex] = el}
                             className={clsx(
-                                'relative aspect-[8/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-64 sm:rounded-2xl',
+                                'relative aspect-[8/10] w-28 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-64 sm:rounded-2xl',
                                 rotationClass
                             )}
                         >
