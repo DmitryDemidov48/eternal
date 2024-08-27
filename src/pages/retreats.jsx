@@ -176,7 +176,6 @@ export default function Retreat({ articles }) {
                         className="aspect-square rounded-xl object-cover ml-auto h-72 w-100 mobile-width"
                         priority
                     />
-
                 </div>
             </Container>
            <Photos/>

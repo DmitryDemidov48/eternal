@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { Container } from '../components/Container';
 import portraitImage from '../images/portrait.jpg';
 
+
 export function SocialLink({ className, href, children, icon: Icon }) {
   return (
       <motion.li

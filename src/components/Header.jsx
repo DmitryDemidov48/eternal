@@ -7,6 +7,7 @@ import { Fragment, useEffect, useRef } from 'react'
 import {Container} from "./Container";
 import {useRouter} from "next/router";
 import { motion } from "framer-motion";
+
 function CloseIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>

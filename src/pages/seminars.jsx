@@ -11,5 +11,4 @@ const NoContentPage = () => {
         </Container>
     );
 };
-
 export default NoContentPage;

@@ -43,7 +43,7 @@ export function ArticleLayout({
         <Container className="mt-16 lg:mt-32">
           <div className="xl:relative">
             <div className="mx-auto max-w-2xl">
-              {previousPathname && (
+              {previousPathname &&(
                   <button
                       type="button"
                       onClick={() => router.back()}

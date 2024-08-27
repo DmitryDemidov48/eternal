@@ -20,7 +20,6 @@ export function Button({ variant = 'primary', className, href, ...props }) {
   return href ? (
       <Link href={href} className={className} {...props} />
   ) : (
-      // Иначе возвращаем обычную кнопку
       <button className={className} {...props} />
   )
 }

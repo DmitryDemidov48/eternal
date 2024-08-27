@@ -11,6 +11,7 @@ function CountdownTimer({ targetDate }) {
         return () => clearTimeout(timer);
     }, [timeLeft]);
 
+
     function calculateTimeLeft() {
         const currentDate = new Date();
         const difference = targetDate - currentDate;

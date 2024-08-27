@@ -1,6 +1,7 @@
-// pages/404.tsx
+
 import React from 'react';
 import Link from 'next/link';
+
 
 const Custom404 = () => {
     return (

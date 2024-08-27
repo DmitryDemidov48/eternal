@@ -12,6 +12,7 @@ function NavLink({ href, children }) {
         inactive: { opacity: 0.6 },
     };
 
+
     return (
         <Link href={href} passHref>
 

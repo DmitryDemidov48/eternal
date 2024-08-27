@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { eventsData } from '../../data/events'; // Импортируйте данные событий
+import { eventsData } from '../../data/events';
 
 export default function PurchasePage() {
     const router = useRouter();

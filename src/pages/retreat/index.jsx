@@ -4,6 +4,7 @@ import { SimpleLayout } from '../../components/SimpleLayout';
 import { getAllRetreats } from '../../lib/getAllRetreats';
 import { formatDate } from '../../lib/formatDate';
 
+
 function Retreats({ article }) {
     return (
         <article className="md:grid md:grid-cols-4 md:items-baseline">

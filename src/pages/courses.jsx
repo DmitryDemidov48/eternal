@@ -26,7 +26,6 @@ export default function EventsPage() {
             router.push(`/purchase/${event.id}`);
         }
     };
-
     return (
 <>
     <motion.div

@@ -6,6 +6,7 @@ import { Container } from '../components/Container';
 import { generateRssFeed } from '../lib/generateRssFeed';
 import { getAllArticles } from '../lib/getAllArticles';
 
+
 function Article({ article }) {
     return (
         <motion.div

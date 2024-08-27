@@ -4,6 +4,7 @@ import { mkdir, writeFile } from 'fs/promises'
 import { getAllArticles } from "./getAllArticles";
 import {getAllRetreats} from "./getAllRetreats";
 
+
 export async function generateRssFeed() {
   // Получаем все статьи
   let articles = await getAllArticles()
